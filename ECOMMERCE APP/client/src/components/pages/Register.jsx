@@ -15,7 +15,7 @@ const Register = ({ handleRegister }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://shop-it-nu.vercel.app/api/v1/auth/register", {
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/v1/auth/register`, {
         name,
         email,
         password,
