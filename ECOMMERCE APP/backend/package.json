@@ -5,7 +5,7 @@
   "main": "db.js",
   "type": "module",
  "scripts": {
-  "start": "node index.js", // ya app.js (jo bhi hai)
+  "start": "node index.js",
   "dev": "nodemon index.js",
   "build": "npm install"
 }
