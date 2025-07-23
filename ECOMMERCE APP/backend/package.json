@@ -4,11 +4,12 @@
   "description": "",
   "main": "db.js",
   "type": "module",
-  "scripts": {
-    "dev": "nodemon server.js",
-    "build": "npm install && npm install --prefix client && npm run build --prefix client",
-    "start": "nodemon server.js"
-  },
+ "scripts": {
+  "start": "node index.js", // ya app.js (jo bhi hai)
+  "dev": "nodemon index.js",
+  "build": "npm install"
+}
+,
   "dependencies": {
     "bcrypt": "^5.1.1",
     "braintree": "^3.30.0",
