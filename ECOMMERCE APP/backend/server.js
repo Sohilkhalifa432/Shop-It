@@ -7,22 +7,21 @@ import CategoreyRouter from "./routes/CategoreyRouter.js";
 import ProductRoutes from "./routes/ProductRoutes.js";
 import cors from "cors";
 import path from "path";
+
 dotenv.config();
 connectDB();
 
 const app = express();
-const _dirname = path.resolve();
+const __dirname = path.resolve(); 
+
+// ✅ Middlewares
 app.use(cors());
 app.use(express.json());
 
+// ✅ Routes
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/Categorey", CategoreyRouter);
 app.use("/api/v1/product", ProductRoutes);
 
-app.listen(3000, () => {
-  console.log(
-    colors.green(
-      `Server running on ${process.env.NODE_ENV} port http://localhost:3000`
-    )
-  );
-});
+
+export default app;
