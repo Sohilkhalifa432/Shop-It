@@ -21,6 +21,7 @@ app.use("/api/v1/product", ProductRoutes);
 
 app.get('/', (req, res) => {
   res.send("hello world");
+  console.log("hello world is here");
 });
 
 
