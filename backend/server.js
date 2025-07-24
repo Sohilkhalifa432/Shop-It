@@ -19,6 +19,10 @@ app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/Categorey", CategoreyRouter);
 app.use("/api/v1/product", ProductRoutes);
 
+app.get('/',()=>{
+  res.send("hello world");
+}
+
 app.listen(3000, () => {
   console.log(
     colors.green(
