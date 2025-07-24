@@ -1,8 +1,3 @@
-<h1 align="center">Hi 👋, I'm Sohil</h1>
-<h3 align="center">
-  Innovative MERN Stack Developer skilled in building scalable web applications.<br>
-  Passionate about tackling complex challenges and solving logical problems using <b>MongoDB, Express.js, React.js, and Node.js</b>.
-</h3>
 
 <br />
 
