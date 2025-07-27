@@ -18,9 +18,8 @@ app.use(express.json());
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/Categorey", CategoreyRouter);
 app.use("/api/v1/product", ProductRoutes);
-app.get('/', (req, res) => {
-  res.send("hello world");
-});
+
+
 
 
 app.listen(3000, () => {
