@@ -1,10 +1,9 @@
 import { defineConfig } from 'vite';
-
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   base: './',
   plugins: [react()],
-  // server proxy development के लिए है, production में काम नहीं आएगा
   server: {
     proxy: {
       '/api': {
