@@ -19,7 +19,7 @@ app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/Categorey", CategoreyRouter);
 app.use("/api/v1/product", ProductRoutes);
 app.get('/hello', (req, res) => {
-  console.log("hello world");
+  res.send("hello world");
 });
 
 
