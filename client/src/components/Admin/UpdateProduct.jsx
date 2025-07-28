@@ -24,7 +24,7 @@ const UpdateProduct = () => {
   const getSingleProduct = async () => {
     try {
       const { data } = await axios.get(
-        `/api/v1/product/Get-Single-Product/${params.slug}`
+        `https://shop-it-1-9q81.onrender.com/api/v1/product/Get-Single-Product/${params.slug}`
       );
       const p = data.product;
       setName(p.name);
