@@ -11,7 +11,7 @@ const Private = () => {
   useEffect(() => {
     const CheckUser = async () => {
       try {
-        const res = await axios.get("/api/v1/auth/dashboard", {
+        const res = await axios.get("https://shop-it-1-9q81.onrender.com/api/v1/auth/dashboard", {
           headers: {
             Authorization: `Bearer ${auth?.token}`,
           },
