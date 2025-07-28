@@ -10,7 +10,7 @@ const Products = () => {
   const [auth, setAuth] = useAuth();
 
   const GetAllPrdoducts = async () => {
-    const { data } = await axios.get("/api/v1/product/Get-All-Products", {
+    const { data } = await axios.get("https://shop-it-1-9q81.onrender.com/api/v1/product/Get-All-Products", {
       headers: {
         Authorization: `Bearer ${auth?.token}`,
       },
