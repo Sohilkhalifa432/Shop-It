@@ -10,7 +10,7 @@ const ForgotPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/api/v1/auth/forgot-password", {
+      const res = await axios.post("https://shop-it-1-9q81.onrender.com/api/v1/auth/forgot-password", {
         email,
         newPassword,
         answer,
