@@ -13,7 +13,7 @@ const Category = () => {
   // Fetch all categories
   const fetchCategories = async () => {
     try {
-      const res = await axios.get("/api/v1/Categorey/Categorey");
+      const res = await axios.get("https://shop-it-1-9q81.onrender.com/api/v1/Categorey/Categorey");
       if (res.data.success) {
         setCategorey(res.data.categorey);
       } else {
