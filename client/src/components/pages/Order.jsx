@@ -17,7 +17,7 @@ const Order = () => {
 
   const getOrders = async () => {
     try {
-      const { data } = await axios.get("/api/v1/product/orders", {
+      const { data } = await axios.get("https://shop-it-1-9q81.onrender.com/api/v1/product/orders", {
         headers: {
           Authorization: `Bearer ${auth.token}`,
         },
