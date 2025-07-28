@@ -13,7 +13,8 @@ const AdminRoute = () => {
 
   useEffect(() => {
     const CheckUser = async () => {
-      const res = await axios.get("/api/v1/auth/admin", {
+      const { data } = await axios.put("https://shop-it-1-9q81.onrender.com/api/v1/auth/update-profile", {
+      const res = await axios.get("https://shop-it-1-9q81.onrender.com//api/v1/auth/admin", {
         headers: {
           Authorization: `Bearer ${auth?.token}`,
         },
